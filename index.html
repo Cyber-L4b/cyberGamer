@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberGames</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body">
+    <main class="container main">
+        <img src="img/logo.png" alt="cyberLogo Games" style="height: 50px;">
+        <section class="divisor">
+            <div class="divisor__line"></div>
+            <img src="img/fade_bar.svg" alt="Visual bar" class="divisor__bar">
+            <div class="divisor__line"></div>
+        </section>
+        <h1 class="page-title">Aluguel de <span class="page-title__emphasis">Games</span></h1>
+        <section class="dashboard">
+            <ul class="dashboard__items">
+                <!-- Game 1 -->
+                <li class="dashboard__items__item" id="game-1">
+                    <div class="dashboard__item__img">
+                        <img src="https://i.ytimg.com/vi/ek-iAALNeRo/maxresdefault.jpg" alt="Capa jogo FORZA HORIZON 5" style="height: 150px;">
+                    </div>
+                    <p class="dashboard__item__name">The Last Of Us II</p>
+                    <a onclick="alterarStatus(1)" href="#" class="dashboard__item__button">Alugar</a>
+                </li>
+                <!-- Game 2 -->
+                <li class="dashboard__items__item" id="game-2">
+                    <div class="dashboard__item__img">
+                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg?t=1695758729" alt="Capa jogo Ticket to Ride" style="height: 150px;">
+                        
+                    </div>
+                    <p class="dashboard__item__name">God of War</p>
+                    <a onclick="alterarStatus(2)" href="#" class="dashboard__item__button">Alugar</a>
+                </li>
+                <!-- Game 3 -->
+                <li class="dashboard__items__item" id="game-3">
+                    <div class="dashboard__item__img dashboard__item__img--rented">
+                        <img src="https://th.bing.com/th/id/R.97ffc5db550beb23e5240c8001a6c90d?rik=M4h0%2bFo2fSgI5Q&riu=http%3a%2f%2fjogorama.com.br%2farquivos%2fnoticias%2f2018%2fspider-man-ps4.jpg&ehk=NKGOGNYYUEmfQOWVfDW495iGSZCZHdIRBPHW4rKk1T4%3d&risl=&pid=ImgRaw&r=0" alt="Capa jogo Takenoko" style="height: 150px;">
+                    </div>
+                    <p class="dashboard__item__name">Spider-Man</p>
+                    
+                    <a onclick="alterarStatus(3)" href="#" class="dashboard__item__button dashboard__item__button--return">Devolver</a>
+                </li>
+            </ul>
+        </section>
+        <img src="img/hachuras.svg" alt="Visual hachuras" class="hachuras">
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
